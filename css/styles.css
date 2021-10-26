@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#map {
+  height: 90vh;
+  width: 100vw;
+}
+/*# sourceMappingURL=styles.css.map */
