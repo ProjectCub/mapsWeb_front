@@ -6,7 +6,57 @@
 }
 
 #map {
-  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
   width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#map #map_wrap {
+  height: 100%;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#map #map_wrap #info {
+  z-index: 99;
+  font-size: 4rem;
+}
+
+#map #map_wrap #search {
+  margin: 1rem;
+  width: auto;
+  z-index: 99;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10rem;
+}
+
+#map #map_wrap #search #search_input {
+  border-style: none;
+  border-radius: 10rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem;
 }
 /*# sourceMappingURL=styles.css.map */

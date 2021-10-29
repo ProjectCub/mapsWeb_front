@@ -4,6 +4,40 @@
   box-sizing: border-box;
 }
 #map {
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: 100vw;
+  justify-content: space-between;
+
+  #map_wrap {
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    #info {
+      z-index: 99;
+      font-size: 4rem;
+    }
+
+    #search {
+      margin: 1rem;
+      width: auto;
+      z-index: 99;
+      height: 2rem;
+      display: flex;
+      border-radius: 10rem;
+
+      #search_input {
+        border-style: none;
+        border-radius: 10rem;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
+        padding: 0.3rem;
+      }
+    }
+  }
 }

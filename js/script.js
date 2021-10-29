@@ -15,7 +15,17 @@ document.addEventListener(
         marker.remove();
       }
       marker = new mapboxgl.Marker().setLngLat(e.lngLat).addTo(map); // add the marker to the map
+      console.log(e.lngLat);
     });
   },
   false
 );
+class data {
+  constructor(lat, lng, description) {
+    this.lat = e.lngLat.lat;
+    this.lng = e.lngLat.lng;
+    this.description = description;
+  }
+  list = ["this is a good place", "this is a bad place"];
+}
+list.array.forEach((element) => {});
