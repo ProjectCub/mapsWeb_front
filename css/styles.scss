@@ -8,36 +8,38 @@
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  justify-content: space-between;
 
-  #map_wrap {
-    height: 100%;
+  #info {
+    padding: 2rem;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    height: 10vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
     z-index: 99;
+    font-size: 1rem;
+    transition: height 0.5s ease-in;
+  }
+
+  #search {
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    z-index: 99;
+    height: 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    border-radius: 10rem;
 
-    #info {
-      z-index: 99;
-      font-size: 4rem;
-    }
-
-    #search {
-      margin: 1rem;
-      width: auto;
-      z-index: 99;
-      height: 2rem;
-      display: flex;
+    #search_input {
+      border-style: none;
       border-radius: 10rem;
-
-      #search_input {
-        border-style: none;
-        border-radius: 10rem;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($color: #ffffff, $alpha: 0.9);
-        padding: 0.3rem;
-      }
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #ffffff, $alpha: 0.9);
+      padding: 0.3rem;
     }
   }
 }

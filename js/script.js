@@ -1,6 +1,7 @@
 document.addEventListener(
   "DOMContentLoaded",
   () => {
+    const info = document.querySelector("#info");
     mapboxgl.accessToken =
       "pk.eyJ1IjoiaW5jaW5lcjhyIiwiYSI6ImNrdjl2eWhoeDBhcTkycW1neXIwNTF4bGYifQ.D_EYYNYwxr4ejAGqBkrqcw";
     const map = new mapboxgl.Map({
@@ -15,7 +16,7 @@ document.addEventListener(
         marker.remove();
       }
       marker = new mapboxgl.Marker().setLngLat(e.lngLat).addTo(map); // add the marker to the map
-      console.log(e.lngLat);
+      info.style.height = "30rem";
     });
   },
   false
