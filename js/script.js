@@ -16,7 +16,7 @@ document.addEventListener(
         marker.remove();
       }
       marker = new mapboxgl.Marker().setLngLat(e.lngLat).addTo(map); // add the marker to the map
-      info.style.height = "30rem";
+      info.style.height = "40vh";
     });
   },
   false
